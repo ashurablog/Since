@@ -1,4 +1,146 @@
+/* resetCSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+.header-logo a:link,
+.header-navi a:link{
+  color: #fff;
+}
+
+.header-logo a:visited,
+.header-navi a:visited{
+  color: rgb(50, 100,250);
+}
+
+.header-logo a:hover,
+.header-navi a:hover{
+  color: rgb(50, 100,250);
+}
+
+.header-logo:hover,
+.header-navi-item:hover{
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+ol,ul{
+  list-style: none;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+}
+
+.header-bg{
+  position: relative;
+  flex-wrap: wrap;
+  z-index: 2;
+  padding: 30px;
+}
+
+.header-logo a{
+  font-family: cursive;
+  display: block;
+  text-decoration: none;
+  color:#fff;
+  font-size: 2rem;
+}
+
+.header-cat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-cat input,
+.header-cat label{
+  display: none;
+}
+
+.header-navi-list{
+  display: flex;
+}
+
+.header-navi-item span{
+  position: relative;
+}
+
+.header-navi-item span:after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: rgb(0,0,252);
+  opacity: 0;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+
+.header-navi-item:hover span:after{
+  opacity: 1;
+  left: 0;
+  width: 100%;
+}
+
+.header-navi a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding-right: 33px;
+}
+
+.mainKv{
+  position: relative;
+  background-image: url(6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+}
+
+.mainKv-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.mainKv-title{
+  font-family: fantasy;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 10px 10px 5px #000;
+}
+
+.concept-cat{
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
