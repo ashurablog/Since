@@ -1,0 +1,56 @@
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.concept-img{
+  width: calc(50% - 40px);
+}
+
+.concept-img > img{
+  width: 100%;
+}
+
+.concept-text{
+  width: calc(50% - 40px);
+  height: 630px;
+  overflow-y: auto;
+}
+
+.mainContent-subTitle{
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mainContent-subTitle::before,
+.mainContent-subTitle::after{
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  vertical-align: 5px;
+  background-color: black;
+}
+
+.mainContent-subTitle::before{
+  margin-right: 20px;
+}
+
+.mainContent-subTitle::after{
+  margin-left: 20px;
+}
+
+.concept-sentence p{
+  margin-bottom: 16px;
+}
+
+.mainContent-title{
+  font-family: fantasy;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+}
